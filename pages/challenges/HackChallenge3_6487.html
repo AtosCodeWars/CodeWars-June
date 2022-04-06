@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang='en'>
+    <head>
+        <meta charset='utf-8'>
+        <title>ATOS Code Wars</title>
+        <link rel='stylesheet' href='../../css/main.css'>
+        <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="../../css/CodeWar.css">            
+    </head>
+    <body>
+        <header>
+            <h1><a href='../../index.html'>ATOS Code Wars</a></h1>
+            <h3 style="margin-bottom: 0px;">April 8, 20200</h3>
+        </header>
+        <nav>
+            <a style="padding-left: 200px;" href='../../index.html'>Home</a>
+            <a href='../challenge.html' class="live">Challenges</a>
+            <!-- <a href='../teams.html' >Teams</a> -->
+            <a href='../result.html'>Result</a>
+            <a href='../previous.html'>Previous Code Wars</a>
+        </nav>
+        <section class="py-5 text-center container" style="align-items: center;">
+            <h2>You did it! </h2>
+            <p>Instructions: You found the secret log in page for the hacker’s account. 
+                Now, you job is to find the hidden credentials to log into the profile. </p>
+            <p>Hint: The values you are looking for are set somewhere else.</p>
+            <br />
+
+            <div class="card mx-auto" style="width: 40rem;">
+                <div class="card-body">
+                    <h3 class="card-title">Log in</h3>
+                    <br/>
+                    <br/>
+                    <form enctype="multipart/form-data" id="myForm" method="post"
+                        action="https://hu9zc1g0o3.execute-api.us-east-1.amazonaws.com/cipherchallenge">
+                        <input type="hidden" id="number" name="number" value="0">
+                        <h5 style="text-align: left;"><label>Email:</label></h5>
+                        <input type="text" id="email" name="email">
+                        <br/>
+                        <br/>
+                        <h5 style="text-align: left;"><label >Password:</label></h5>
+                        <input type="text" id="password" name="password">
+                        <input type="submit" value="Log in">
+                    </form>
+                </div>
+            </div>  
+        </section>
+        <footer>
+            <p class="mb-1">Atos ® - Cloud Enterprise Solutions</p>
+            <p class="mb-1">Cross Cloud Functional Services - CodeWars</p>
+        </footer>
+
+        <script src="../../js/main.js" type="text/javascript"></script>
+        <script src="../../js/test.js" type="text/javascript"></script>
+    </body>
+</html>
