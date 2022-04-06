@@ -20,39 +20,25 @@
             <a href='../previous.html'>Previous Code Wars</a>
         </nav>
         <section class="py-5 text-center container" style="align-items: center;">
-            <h2>You did it! You found the right credentials, but it looks like you've been redirected to the wrong page </h2>
-            <p>Instructions: Find the hidden url for the feed page</p>
+            <h2>You did it! You found the right credentials, but it looks like the hacker has all his posts encrypted. </h2>
+            <p>Instructions: Your job is to decrypt the message and find the secret word to stop the attack. </p>
             <br />
-            <ul class="nav nav-tabs" id="myTab">
-                <li class="nav-item">
-                    <a href="#configuration" class="nav-link active" data-bs-toggle="tab">Configuration</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#profile" class="nav-link" data-bs-toggle="tab">Profile</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#news" class="nav-link" data-bs-toggle="tab">News</a>
-                </li>
-                <li class="nav-item disabled" hidden>
-                    <a href="#feed" class="nav-link disabled" data-bs-toggle="tab">Feed</a>
-                </li>
-            </ul>
-            <div class="tab-content">
-                <div class="tab-pane fade show active" id="configuration">
-                    <h4 class="mt-2">Configuration</h4>
-                    <p>Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui. Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth.</p>
-                </div>
-                <div class="tab-pane fade" id="profile">
-                    <h4 class="mt-2">Profile</h4>
-                    <p>Vestibulum nec erat eu nulla rhoncus fringilla ut non neque. Vivamus nibh urna, ornare id gravida ut, mollis a magna. Aliquam porttitor condimentum nisi, eu viverra ipsum porta ut. Nam hendrerit bibendum turpis, sed molestie mi fermentum id. Aenean volutpat velit sem. Sed consequat ante in rutrum convallis. Nunc facilisis leo at faucibus adipiscing.</p>
-                </div>
-                <div class="tab-pane fade" id="news">
-                    <h4 class="mt-2">News</h4>
-                    <p>Donec vel placerat quam, ut euismod risus. Sed a mi suscipit, elementum sem a, hendrerit velit. Donec at erat magna. Sed dignissim orci nec eleifend egestas. Donec eget mi consequat massa vestibulum laoreet. Mauris et ultrices nulla, malesuada volutpat ante. Fusce ut orci lorem. Donec molestie libero in tempus imperdiet. Cum sociis natoque penatibus et magnis.</p>
-                </div>
-                <div class="tab-pane fade" id="feed">
+            <p>We have faith in you, only you can stop this and save the company!</p>
+            <br />
+            <div class="card mx-auto" style="width: 40rem; align-items: center;"">
+                <img src="../../img/hack_challenge/secret.jpg" class="card-img-top" style="height:400px; width:500px;">
+                <div class="card-body">
+                    <h3 class="card-title">Secret attack</h3>
+                    <p class="card-text">'.)-/#`4)`%%3`2%6%.`,,)7`9%(4J'52:`"(.`$2/7`4%2#%3`%(4`43/0`)`.%(7`.!,0`%(4`42!43`/4`%-)4`3)`4)`7/.+`,,)7`5/9J+#!44!`%(4`2/&`9$!%2`%2!`%7`$.!`$%..!,0`3!`'.)/'`3)`'.)(492%6%J</p>
                 </div>
             </div>
+            <br />
+            <form enctype="multipart/form-data" id="myForm" method="post"
+                action="https://7poi47vo3g.execute-api.us-east-1.amazonaws.com/default/hackerchallenge">
+                <input type="hidden" id="number" name="number" value="1">
+                <input type="text" id="key" name="key" style="width:300px">
+                <input type="submit" value="Submit">
+            </form>
         </section>
         <footer>
             <p class="mb-1">Atos ® - Cloud Enterprise Solutions</p>
