@@ -33,8 +33,12 @@
             <h4>Q: As a developer, you usually get mad at me because I complain a lot, although I'm usually right. What am I?</h4>
             <br/>
             <h4>Answer:</h4>
-            <input />
-            <button>Submit</button>
+            <form enctype="multipart/form-data" id="myForm" method="post"
+                action="https://pruw33n6cg.execute-api.us-east-1.amazonaws.com/default/riddlechallenge">
+                <input type="hidden" id="number" name="number" value="2">
+                <input type="text" id="key" name="key" style="width:300px">
+                <input type="submit" value="Submit">
+            </form>
 
         </section>
         <footer>

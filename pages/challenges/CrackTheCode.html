@@ -35,12 +35,13 @@
                 <image src="../../img/crack_the_code/Instructions.png" style="width:1000px"/>
             </div>
             <br />
-            <div>
-                <input />
-                <input />
-                <input />
-            </div>
-            <button>Submit</button>
+            <h4>Answer:</h4>
+            <form enctype="multipart/form-data" id="myForm" method="post"
+                action="https://18m3skkw3f.execute-api.us-east-1.amazonaws.com/default/codeandsql">
+                <input type="hidden" id="number" name="number" value="0">
+                <input type="text" id="key" name="key" style="width:300px">
+                <input type="submit" value="Submit">
+            </form>
             <!-- <div>
                 <h2><b>6 8 2 </b>One number is correct and in the correct position</h2>
             </div>
