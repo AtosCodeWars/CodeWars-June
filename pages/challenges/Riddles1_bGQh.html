@@ -33,8 +33,12 @@
             <h4>Q: The more you code, the more of me there is. I may be gone for now but you can't get rid of me forever. What am I?</h4>
             <br/>
             <h4>Answer:</h4>
-            <input />
-            <button>Submit</button>
+            <form enctype="multipart/form-data" id="myForm" method="post"
+                action="https://pruw33n6cg.execute-api.us-east-1.amazonaws.com/default/riddlechallenge">
+                <input type="hidden" id="number" name="number" value="0">
+                <input type="text" id="key" name="key" style="width:300px">
+                <input type="submit" value="Submit">
+            </form>
             
 
         </section>
