@@ -23,12 +23,21 @@
             <h2>Fallen Phrase Challenge</h2>
             <br />
             <br />
-            <h4>Below, you will find a hidden message that is encrypted using the Semaphore encryption. Your task is to decript the message and enter it in the input below.
-                There are two images in this view, the first one (top) is the template and the second one (bottom) is the message you have to decript. Good Luck!
+            <h4>Help! Tha words in the phrase has fallen down and we need your help to figure out the phrase. You will need to rearrange the letters
+                to recreate the phrase. Luckily, the letters can only fall down it's own column. 
+            </h4>
+            <h4>You will need to recreate the phrase and enter the last word of the phrase into the input below to go to the next challenge. Good Luck!
             </h4>
             <br />
             <br />
             <image src="../../img/FallenPhrase/FallenPhrase.png" style="width:1300px"/>
+            <h4>Answer:</h4>
+            <form enctype="multipart/form-data" id="myForm" method="post"
+                action="https://hk6kxfftb4.execute-api.us-east-1.amazonaws.com/default/cipherchallenge">
+                <input type="hidden" id="number" name="number" value="1">
+                <input type="text" id="key" name="key" style="width:800px">
+                <input type="submit" value="Submit">
+            </form>
             
 
         </section>
