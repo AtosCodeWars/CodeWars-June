@@ -23,9 +23,25 @@
             <h2>File Challenge</h2>
             <br />
             <br />
-            <h4>Below, you will find a hidden message that is encrypted using the Semaphore encryption. Your task is to decript the message and enter it in the input below.
-                There are two images in this view, the first one (top) is the template and the second one (bottom) is the message you have to decript. Good Luck!
+            <h4>
+                Welcome to the file challenge! This challenge will put to the test your knowledge about terminal 
+                commands to navigate through different files. Below you’ll find the link to a GitHub repo, 
+                you’ll have to clone it and follow the instructions provided there to complete the challenge.
+
+                When you complete the challenge, you'll have to come back and submit your answer.
+
+                Good Luck!
             </h4>
+            <br/>
+            <h3><a href="https://github.com/AtosCodeWars/FileChallenge">File challenge repo</a></h3>
+            <br/>
+            <h4>Answer:</h4>
+            <form enctype="multipart/form-data" id="myForm" method="post"
+                action="https://hk6kxfftb4.execute-api.us-east-1.amazonaws.com/default/cipherchallenge">
+                <input type="hidden" id="number" name="number" value="1">
+                <input type="text" id="key" name="key" style="width:800px">
+                <input type="submit" value="Submit">
+            </form>
             
             
 

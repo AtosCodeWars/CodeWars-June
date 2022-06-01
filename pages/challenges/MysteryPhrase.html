@@ -20,12 +20,25 @@
             <a href='../previous.html'>Previous Code Wars</a>
         </nav>
         <section class="py-5 text-center container">
-            <h2>Crossword Challenge</h2>
+            <h2>Mystery Phrase Challenge</h2>
             <br />
             <br />
-            <h4>Below, you will find a hidden message that is encrypted using the Semaphore encryption. Your task is to decript the message and enter it in the input below.
-                There are two images in this view, the first one (top) is the template and the second one (bottom) is the message you have to decript. Good Luck!
+            <h4>Welcome to the mystery phrase challenge. 
+                Below you’ll find a set of questions, your job is to answer them correctly and then, using the numbers below each letter of the answer, complete the mystery phrase. 
+                When you get the complete phrase, you can submit it at the bottom of the page.
+                Good luck! 
             </h4>
+            <br/>
+            <image src="../../img/MysteryPhrase/Code wars.png" style="width:1000px"/>
+            <br/>
+            <br/>
+            <h4>Answer:</h4>
+            <form enctype="multipart/form-data" id="myForm" method="post"
+                action="https://hk6kxfftb4.execute-api.us-east-1.amazonaws.com/default/cipherchallenge">
+                <input type="hidden" id="number" name="number" value="2">
+                <input type="text" id="key" name="key" style="width:800px">
+                <input type="submit" value="Submit">
+            </form>
             
             
 
